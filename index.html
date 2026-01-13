@@ -852,7 +852,13 @@
                 </div>
 
                 <div class="contact-form animate-on-scroll delay-200">
-                   <form action="send_mail.php" method="POST">
+                   <form action="<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="a11fb947-f29d-4509-9a1a-2e3058f598ca">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>" method="POST">
     <div class="form-group">
         <label>Name</label>
         <input type="text" name="name" class="form-control" placeholder="Your Full Name" required>
@@ -982,3 +988,4 @@
 </body>
 
 </html>
+
