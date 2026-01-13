@@ -852,13 +852,16 @@
                 </div>
 
                 <div class="contact-form animate-on-scroll delay-200">
-                   <form action="https://api.web3forms.com/submit"  method="POST">
-                       <input type="hidden" name="access_key" value="d844ee0a-9fc6-4a24-9a42-64d490493044">
+                  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="d844ee0a-9fc6-4a24-9a42-64d490493044">
+
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
     <div class="form-group">
         <label>Name</label>
         <input type="text" name="name" class="form-control" placeholder="Your Full Name" required>
     </div>
-    
+   
     <div class="form-group">
         <label>Email Address</label>
         <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
@@ -872,12 +875,12 @@
     <div class="form-group">
         <label>Type of Matter</label>
         <select name="matter" class="form-control">
-            <option>Civil Litigation</option>
-            <option>Criminal Defense</option>
-            <option>Family Law</option>
-            <option>Property / Real Estate</option>
-            <option>Corporate</option>
-            <option>Other</option>
+            <option value="Civil Litigation">Civil Litigation</option>
+            <option value="Criminal Defense">Criminal Defense</option>
+            <option value="Family Law">Family Law</option>
+            <option value="Property / Real Estate">Property / Real Estate</option>
+            <option value="Corporate">Corporate</option>
+            <option value="Other">Other</option>
         </select>
     </div>
 
@@ -982,4 +985,5 @@
 </a>
 </body>
 </html>
+
 
